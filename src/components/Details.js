@@ -21,6 +21,7 @@ import PrinterImg from '../assets/images/printer.png';
 import FridayImg from '../assets/images/friday.png';
 import useAlert from '../hooks/useAlert';
 import Loading from './Loading';
+import TabLabel from './TabLabel';
 
 const Details = () => {
   const [tab, setTab] = useState(0);
@@ -34,8 +35,8 @@ const Details = () => {
     <Box>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={tab} onChange={handleChange}>
-          <Tab label="Device Details" />
-          <Tab label="Power Details" />
+          <Tab label={<TabLabel label="Device Details" />} />
+          <Tab label={<TabLabel label="Power Details" />} />
         </Tabs>
       </Box>
 
