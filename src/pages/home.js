@@ -94,7 +94,7 @@ const Home = () => {
         </Stack>
 
         <Box sx={{ textAlign: 'center' }}>
-          <Typography sx={{ color: '#008A05' }} variant="caption">
+          <Typography sx={{ color: 'success.main' }} variant="caption">
             Online
           </Typography>
           <Typography variant="caption">

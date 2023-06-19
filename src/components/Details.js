@@ -95,14 +95,18 @@ const Details = () => {
                 <Typography variant="body2" fontWeight="bold" component="span">
                   Associated site: 
                 </Typography>
-                <Typography variant="body2" component="span"> Karwal_28761</Typography>
+                <Typography variant="body2" component="span" ml={0.5}>
+                  <Link>Karwal_28761</Link>
+                </Typography>
               </Box>
 
               <Box mb={1}>
                 <Typography variant="body2" fontWeight="bold" component="span">
                   Power outlet: 
                 </Typography>
-                <Typography variant="body2" component="span"> Smart_outlet35367</Typography>
+                <Typography variant="body2" component="span" ml={0.5}>
+                  <Link>Smart_outlet35367</Link>
+                </Typography>
               </Box>
 
               <Stack direction="row" alignItems="center" spacing={2}>
@@ -220,7 +224,16 @@ const Details = () => {
 
                   <Box display="flex">
                     <Typography variant="body2">Site device offline</Typography>
-                    <Typography variant="body2">In Progress</Typography>
+                    <Typography
+                      variant="body2"
+                      color="warning"
+                      sx={{ color: 'warning.main' }}
+                      fontWeight="bold"
+                      ml={1}
+                      mr={0.5}
+                    >
+                      • In Progress
+                    </Typography>
                     <Typography variant="body2">(occuring for 13 hours)</Typography>
                   </Box>
                 </Box>
